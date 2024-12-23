@@ -29,7 +29,7 @@ class NotificationHandler(private val context: Context) {
                 CHANNEL_NAME,
                 NotificationManager.IMPORTANCE_HIGH
             ).apply {
-                setSound(null, null),
+                setSound(null, null);
                 lockscreenVisibility = Notification.VISIBILITY_SECRET
             }
 
