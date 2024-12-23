@@ -46,6 +46,7 @@ class NotificationOnKillService : Service() {
                 .setSmallIcon(appIconResId)
                 .setContentTitle(title)
                 .setContentText(body)
+                .setVisibility(NotificationCompat.VISIBILITY_SECRET)
                 .setAutoCancel(false)
                 .setPriority(NotificationCompat.PRIORITY_MAX)
                 .setContentIntent(pendingIntent)
